@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="theme-color" content="#0D2847">
+  <meta name="theme-color" content="#1F3864">
   <title>Justin Hauser · Japan 2027</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --navy:#0D2847; --navy-dk:#071B35; --navy-lt:#EEF4FF;
-      --gold:#B07C22; --gold-lt:#FBF5E6;
-      --sakura:#E8A4B2; --sakura-lt:#FDF2F5;
-      --cream:#FAF8F4; --ink:#0A1A2F; --ink-2:#233D5C; --ink-3:#5A7590; --ink-4:#90A8BE;
+      --navy:#1F3864; --navy-dk:#1F2A44; --navy-lt:#EDF3FB;
+      --gold:#C9A84C; --gold-lt:#F4ECD8;
+      --sakura:#C9A84C; --sakura-lt:#F4ECD8;
+      --cream:#F7F1E2; --ink:#0A1A2F; --ink-2:#233D5C; --ink-3:#5A7590; --ink-4:#90A8BE;
       --border:#D8E4F0; --border-lt:#EBF2FA; --white:#FFFFFF;
       --shadow:0 2px 12px rgba(13,40,71,.10),0 1px 3px rgba(13,40,71,.06);
       --radius:18px; --radius-md:12px; --radius-sm:8px;
@@ -30,7 +30,7 @@
     html,body{height:100%;margin:0;padding:0}
 
     /* HEADER */
-    #app-header{position:fixed;top:0;left:0;right:0;z-index:9999;background-color:#0D2847;background-image:linear-gradient(160deg,#0F3160 0%,#0D2847 55%,#071B35 100%);border-bottom:1px solid rgba(255,255,255,.08)}
+    #app-header{position:fixed;top:0;left:0;right:0;z-index:9999;background-color:#1F3864;background-image:linear-gradient(160deg,#2E5496 0%,#1F3864 55%,#1F2A44 100%);border-bottom:1px solid rgba(255,255,255,.08)}
     .hdr-top{display:flex;align-items:center;justify-content:space-between;padding:8px 14px 4px}
     .hdr-left{display:flex;align-items:center;gap:8px;flex-shrink:0}
     .hdr-flag{font-size:17px;flex-shrink:0}
@@ -56,7 +56,7 @@
     @keyframes panelFade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
 
     /* BANNER */
-    .trip-banner{background:linear-gradient(135deg,#0D2847 0%,#0A2040 55%,#04111F 100%);border-radius:var(--radius);padding:22px 20px 20px;margin-bottom:14px;color:#fff;position:relative;overflow:hidden}
+    .trip-banner{background:linear-gradient(135deg,#1F3864 0%,#1F2A44 55%,#152740 100%);border-radius:var(--radius);padding:22px 20px 20px;margin-bottom:14px;color:#fff;position:relative;overflow:hidden}
     .trip-banner::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E") repeat}
     .trip-banner-kana{font-family:var(--font-serif);font-size:11px;font-style:italic;opacity:.55;letter-spacing:1px;margin-bottom:4px;position:relative}
     .trip-banner h2{font-family:var(--font-serif);font-size:28px;font-weight:300;letter-spacing:1px;margin-bottom:4px;position:relative}
@@ -88,8 +88,8 @@
     .day-header-info{flex:1;min-width:0}
     .day-name{font-size:15px;font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .day-sub{font-size:11px;color:var(--ink-4);margin-top:2px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
-    .day-city-badge{font-size:10px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;padding:2px 7px;border-radius:5px;background:#EBF3FF;color:#1A5FAA}
-    .day-city-badge.kyoto{background:#F1EBE0;color:#7A5C1F}
+    .day-city-badge{font-size:10px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;padding:2px 7px;border-radius:5px;background:#C9DAF8;color:#1F3864}
+    .day-city-badge.kyoto{background:#F4ECD8;color:#8A6D1F}
     .today-pill{font-size:10px;font-weight:700;background:var(--navy);color:#fff;padding:2px 8px;border-radius:20px}
     .host-pill{font-size:10px;font-weight:600;background:rgba(176,124,34,.15);color:var(--gold);padding:2px 8px;border-radius:20px;border:1px solid rgba(176,124,34,.25)}
     .day-chevron{color:var(--ink-4);font-size:14px;flex-shrink:0;transition:transform .25s cubic-bezier(.4,0,.2,1)}
@@ -98,10 +98,10 @@
     .day-card.open .day-body{max-height:5000px}
     .day-body-inner{padding:0 16px 16px}
 
-    .hotel-bar{display:flex;align-items:center;gap:10px;border-radius:var(--radius-md);padding:10px 13px;margin-bottom:12px;background:#EBF4FF;border-left:3px solid #0D2847}
-    .hb-name{font-size:12px;font-weight:600;color:#0D2847}
+    .hotel-bar{display:flex;align-items:center;gap:10px;border-radius:var(--radius-md);padding:10px 13px;margin-bottom:12px;background:#EDF3FB;border-left:3px solid #1F3864}
+    .hb-name{font-size:12px;font-weight:600;color:#1F3864}
     .hb-detail{font-size:11px;color:#1A3F6F;margin-top:1px}
-    .hb-link{margin-left:auto;font-size:11px;font-weight:500;flex-shrink:0;color:#0D2847}
+    .hb-link{margin-left:auto;font-size:11px;font-weight:500;flex-shrink:0;color:#1F3864}
 
     .day-note-bar{background:var(--navy-lt);border-radius:var(--radius-md);border-left:3px solid #4A80C0;padding:10px 13px;font-size:12px;color:var(--ink-2);line-height:1.55;margin-bottom:12px}
 
@@ -119,7 +119,7 @@
     .stop-dot{position:absolute;left:-25px;top:9px;width:18px;height:18px;border-radius:50%;border:2.5px solid #ccc;background:#fff;z-index:2}
     .stop-dot.t-restaurant{border-color:#8B1A1A;background:#F8EDED}
     .stop-dot.t-activity{border-color:#6650CC;background:#EEE8FF}
-    .stop-dot.t-transport{border-color:#0D2847;background:#EEF4FF}
+    .stop-dot.t-transport{border-color:#1F3864;background:#EEF4FF}
     .stop-dot.t-hotel{border-color:#2E7D32;background:#E8F5E9}
     .stop-dot.t-flight{border-color:#0277BD;background:#E1F5FE}
     .stop-dot.t-suggestion{border-color:#1565C0;background:#E3F2FD}
@@ -200,7 +200,7 @@
     .diet-banner::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E") repeat}
     .diet-banner h2{font-family:var(--font-serif);font-size:26px;font-weight:300;letter-spacing:.8px;margin-bottom:4px;position:relative}
     .diet-banner p{font-size:12px;opacity:.7;position:relative}
-    .diet-cta{background:linear-gradient(135deg,#0D2847,#142647);color:#fff;border-radius:var(--radius);padding:18px 18px 16px;margin-bottom:14px;display:flex;align-items:center;gap:14px;cursor:pointer;border:1px solid rgba(176,124,34,.25);box-shadow:var(--shadow)}
+    .diet-cta{background:linear-gradient(135deg,#1F3864,#1F2A44);color:#fff;border-radius:var(--radius);padding:18px 18px 16px;margin-bottom:14px;display:flex;align-items:center;gap:14px;cursor:pointer;border:1px solid rgba(176,124,34,.25);box-shadow:var(--shadow)}
     .diet-cta:active{transform:scale(.99)}
     .diet-cta-icon{font-size:30px;flex-shrink:0}
     .diet-cta-text{flex:1;min-width:0}
@@ -278,7 +278,7 @@
     #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 
     /* DISCOVER */
-    .disc-banner{background:linear-gradient(135deg,#0D2847 0%,#0A2040 55%,#04111F 100%);border-radius:var(--radius);padding:22px 20px 18px;margin-bottom:14px;color:#fff;position:relative;overflow:hidden}
+    .disc-banner{background:linear-gradient(135deg,#1F3864 0%,#1F2A44 55%,#152740 100%);border-radius:var(--radius);padding:22px 20px 18px;margin-bottom:14px;color:#fff;position:relative;overflow:hidden}
     .disc-banner::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E") repeat}
     .disc-banner h2{font-family:var(--font-serif);font-size:26px;font-weight:300;letter-spacing:.8px;margin-bottom:4px;position:relative}
     .disc-banner p{font-size:12px;opacity:.65;position:relative;margin:0}
@@ -287,7 +287,7 @@
     .disc-city-pill{flex-shrink:0;background:var(--white);border:1px solid var(--border);color:var(--ink-3);padding:9px 16px;border-radius:99px;font-size:12px;font-weight:600;letter-spacing:.04em;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .15s,color .15s,border-color .15s}
     .disc-city-pill:active{background:var(--border-lt)}
     .disc-city-pill.active{background:var(--navy);color:#fff;border-color:var(--navy)}
-    .disc-scherrer{background:linear-gradient(180deg,#0D2847 0%,#142647 100%);color:#f3eee0;border-radius:var(--radius);padding:22px 20px 20px;margin-bottom:14px;position:relative;overflow:hidden;border:1px solid rgba(176,124,34,.2)}
+    .disc-scherrer{background:linear-gradient(180deg,#1F3864 0%,#1F2A44 100%);color:#f3eee0;border-radius:var(--radius);padding:22px 20px 20px;margin-bottom:14px;position:relative;overflow:hidden;border:1px solid rgba(176,124,34,.2)}
     .disc-scherrer::before{content:'';position:absolute;top:-40px;right:-40px;width:160px;height:160px;background:radial-gradient(circle,rgba(176,124,34,.2) 0%,transparent 70%);pointer-events:none}
     .disc-scherrer-label{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:12px;display:flex;align-items:center;gap:8px;position:relative}
     .disc-scherrer-label::before{content:'';width:16px;height:1px;background:var(--gold)}
@@ -295,7 +295,7 @@
     .disc-scherrer-by{font-family:var(--font-serif);font-style:italic;font-size:15px;color:var(--gold);margin-bottom:14px;position:relative}
     .disc-scherrer-by .copy{font-size:11px;font-style:normal;letter-spacing:.06em;opacity:.7;margin-right:4px;font-family:var(--font-sans)}
     .disc-scherrer-p{font-size:13px;line-height:1.6;color:rgba(243,238,224,.78);margin:0 0 16px;position:relative}
-    .disc-scherrer-cta{display:inline-flex;align-items:center;gap:6px;background:var(--gold);color:#0D2847;padding:10px 18px;border-radius:99px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;text-decoration:none;position:relative}
+    .disc-scherrer-cta{display:inline-flex;align-items:center;gap:6px;background:var(--gold);color:#1F3864;padding:10px 18px;border-radius:99px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;text-decoration:none;position:relative}
     .disc-scherrer-cta:active{opacity:.85}
     .disc-scherrer-ig{display:inline-flex;align-items:center;gap:5px;padding:9px 14px;border-radius:99px;font-size:11.5px;font-weight:600;letter-spacing:.05em;color:#f3eee0;border:1px solid rgba(244,229,191,.3);text-decoration:none;transition:background .15s;margin-top:2px}
     .disc-scherrer-ig:active{background:rgba(255,255,255,.1)}
@@ -722,15 +722,28 @@ var DISCOVER = {
       ['Hakone Open-Air Museum','Hakone Open-Air Museum','Sculpture in the hills, with a Picasso pavilion'],
       ['Lake Ashi & the Hakone Shrine torii','Hakone Shrine Lake Ashi','The red torii standing in the water'],
       ['Owakudani','Owakudani Hakone','Volcanic valley of steam vents \u2014 the black eggs'],
-      ['Hakone Ropeway','Hakone Ropeway','Cable-car views toward Mt Fuji on a clear day']
+      ['Hakone Ropeway','Hakone Ropeway','Cable-car views toward Mt Fuji on a clear day'],
+      ['Lake Ashi pirate cruise','Hakone Sightseeing Cruise Lake Ashi','A short crossing of the lake beneath Fuji on a clear day'],
+      ['Old Tokaido cedar avenue','Hakone Old Tokaido cedar avenue','A quiet walk under towering cedars on the historic post road'],
+      ['Hakone Checkpoint (Sekisho)','Hakone Checkpoint','Reconstructed Edo-era barrier station on Lake Ashi']
     ]},
-    { cat:'Art & Onsen', items:[
+    { cat:'Art & Museums', items:[
       ['Pola Museum of Art','Pola Museum of Art Hakone','Impressionist & modern collection in the forest'],
-      ['Gora Kadan onsen','Gora Kadan Hakone','Hot-spring baths at the ryokan']
+      ['Hakone Venetian Glass Museum','Hakone Venetian Glass Museum','Murano glass and a glittering garden colonnade'],
+      ['Okada Museum of Art','Okada Museum of Art Hakone','East-Asian art with an open-air foot bath under a giant mural'],
+      ['Narukawa Art Museum','Narukawa Art Museum Hakone','Nihonga painting with a panorama over Lake Ashi and Fuji']
     ]},
-    { cat:'Food', items:[
+    { cat:'Onsen & Nature', items:[
+      ['Gora Kadan onsen','Gora Kadan Hakone','Hot-spring baths at the ryokan'],
+      ['Hakone Gora Park','Gora Park Hakone','A hillside French garden with a tropical glasshouse'],
+      ['Hakone Botanical Garden of Wetlands','Hakone Wetlands Botanical Garden','Boardwalks through alpine marsh \u2014 fresh new green in spring'],
+      ['Mt Komagatake ropeway','Komagatake Ropeway Hakone','Ridge-top shrine and wide views over the caldera']
+    ]},
+    { cat:'Food & Tea', items:[
       ['Kaiseki at the ryokan','Gora Kadan Hakone','Seasonal multi-course dinner \u2014 flag dietary notes ahead'],
-      ['Hakone soba & yuba','Hakone soba','Mountain soba and tofu-skin specialties']
+      ['Hakone soba & yuba','Hakone soba','Mountain soba and tofu-skin specialties'],
+      ['Amasake-chaya teahouse','Amasake Chaya Hakone','A 400-year-old thatched rest stop for sweet amazake on the old road'],
+      ['Bakery & Table \u00b7 Lake Ashi','Bakery and Table Hakone','Lakeside bakery-caf\u00e9 with a foot-bath terrace']
     ]}
   ],
   Kyoto:[
@@ -1087,33 +1100,44 @@ function renderUtilities(){
     +'<div class="section-label">Currency Converter</div>'
     +'<div class="util-card"><div class="util-card-title">JPY ↔ USD</div>'
     +'<div class="fx-row">'
-    +'<div class="fx-group"><div class="fx-label">🇯🇵 Japanese Yen</div><input class="fx-input" id="fx-jpy" type="number" inputmode="numeric" value="10000"></div>'
+    +'<div class="fx-group"><div class="fx-label">🇯🇵 Japanese Yen</div><input class="fx-input" id="fx-jpy" type="text" inputmode="numeric" value="10,000"></div>'
     +'<button class="fx-swap-btn" id="fx-swap">⇋</button>'
-    +'<div class="fx-group"><div class="fx-label">🇺🇸 US Dollar</div><input class="fx-input" id="fx-usd" type="number" inputmode="decimal"></div>'
+    +'<div class="fx-group"><div class="fx-label">🇺🇸 US Dollar</div><input class="fx-input" id="fx-usd" type="text" inputmode="decimal"></div>'
     +'</div><div class="fx-rate-note">Rate: 1 USD = '+FX_RATE.toFixed(2)+' JPY · Source: planning canvas</div></div>'
     +'<div class="section-label">Quick Reference</div>'
     +'<div class="util-card"><ul class="info-list">'
-    +'<li><span class="info-emoji">💴</span><div class="info-text"><strong>Cash is useful</strong>Carry some yen — a few counters and the ryokan extras prefer cash. ATMs at 7-Eleven and Japan Post accept foreign cards.</div></li>'
+    +'<li><span class="info-emoji">💴</span><div class="info-text"><strong>Japan is cash-first</strong>Carry yen — some counters and ryokan extras prefer cash, and cards aren\'t always taken at smaller restaurants. ATMs at 7-Eleven and Japan Post accept foreign cards; most others don\'t.</div></li>'
+    +'<li><span class="info-emoji">📱</span><div class="info-text"><strong>Suica (Mobile Wallet)</strong>Wallet app → tap + → search Suica under transit cards → add funds. Tap your phone at the gate; top up via your linked card. Covers JR, subway, bus and IC readers nationwide — Tokyo, Kyoto, Hakone and beyond.</div></li>'
+    +'<li><span class="info-emoji">🚄</span><div class="info-text"><strong>Shinkansen Booking</strong>Reserve via <strong>SmartEX</strong> for JR Central / West routes — including Tokyo–Kyoto — or JR East for the eastern lines. Both support English and overseas cards; collect tickets at station machines using your confirmation number. Luggage over 160 cm (L+W+H) needs an advance oversized-baggage reservation.</div></li>'
     +'<li><span class="info-emoji">🍁</span><div class="info-text"><strong>Early spring · cherry-blossom season</strong>Mild and changeable — Tokyo and Kyoto are at or near full bloom, Hakone a touch cooler in the hills. Roughly 8–18°C across the route. Pack layers and a light rain shell; evenings are still cool.</div></li>'
-    +'<li><span class="info-emoji">📱</span><div class="info-text"><strong>Suica (Mobile Wallet)</strong>Wallet app → tap + → search Suica. Covers JR, subway, bus and IC readers nationwide — Tokyo, Kyoto, Hakone and beyond.</div></li>'
     +'<li><span class="info-emoji">⏰</span><div class="info-text"><strong>Time Zone: JST = UTC+9</strong>Japan keeps one time zone year-round — no daylight saving.</div></li>'
-    +'<li><span class="info-emoji">🔌</span><div class="info-text"><strong>Electricity: 100V · Type A</strong>North American travellers need only a 3-to-2-prong adapter, no converter.</div></li>'
-    +'<li><span class="info-emoji">📡</span><div class="info-text"><strong>eSIM Recommended</strong>Activate before landing: Airalo, HolaFly, or Ubigi.</div></li>'
+    +'<li><span class="info-emoji">🔌</span><div class="info-text"><strong>Electricity: 100V · Type A</strong>Sockets are two-pronged. North American travellers need only a 3-to-2-prong adapter, no voltage converter.</div></li>'
+    +'<li><span class="info-emoji">📡</span><div class="info-text"><strong>eSIM Recommended</strong>Activate before landing — Bcengi (Happy Camper\'s preferred provider), Airalo, HolaFly, or YO. Set up in minutes through each provider\'s app.</div></li>'
+    +'<li><span class="info-emoji">🙏</span><div class="info-text"><strong>Tipping isn\'t customary</strong>Service is included and tips may be politely declined. If you ever do tip, avoid amounts beginning with 4 — the number is associated with death and considered unlucky.</div></li>'
     +'</ul></div>'
     +'<div class="section-label">Dining Etiquette</div>'
     +'<div class="util-card">'
-    +'<div class="rule-item"><span class="rule-icon">🚫</span><div class="rule-text"><strong>No Fragrance — Critical</strong>Avoid perfume, cologne, and scented products on dining days. Even a trace disrupts the chef and other guests at the counter — the single most important point at high-end Japanese restaurants.</div></div>'
-    +'<div class="rule-item"><span class="rule-icon">⏰</span><div class="rule-text"><strong>Punctuality</strong>Arrive on time or early — the meal begins together for everyone. Allow generous transfer time to quiet back-street addresses.</div></div>'
-    +'<div class="rule-item"><span class="rule-icon">💍</span><div class="rule-text"><strong>Protect the Counter</strong>Remove rings, bracelets, and watches at sushi counters — many are single pieces of precious Hinoki cypress.</div></div>'
-    +'<div class="rule-item"><span class="rule-icon">💰</span><div class="rule-text"><strong>No Tipping</strong>Not customary in Japan. Say <em>Gochisousama deshita</em> after the meal — deeply appreciated.</div></div>'
-    +'<div class="rule-item"><span class="rule-icon">🔒</span><div class="rule-text"><strong>Reservations are Firm</strong>Once confirmed, reservations are commitments — cancellations damage relationships built over many seasons.</div></div>'
+    +'<div class="rule-item"><span class="rule-icon">🚫</span><div class="rule-text"><strong>No Fragrance — the single most important rule</strong>On dining days, skip perfume and cologne, scented hair products and lotions, and strongly flavoured gum or mints. Don\'t smoke beforehand, and use unscented laundry products — clothing can carry scent even when none was applied that day. At an intimate counter, any competing aroma disrupts the chef\'s ingredients and every guest present.</div></div>'
+    +'<div class="rule-item"><span class="rule-icon">👔</span><div class="rule-text"><strong>Attire — understated, not formal</strong>No formal wear is required; clean and well-presented is the right register. A collared shirt suits men at upscale counters. Choose comfortable footwear — you may walk a fair distance over the day.</div></div>'
+    +'<div class="rule-item"><span class="rule-icon">⏰</span><div class="rule-text"><strong>Punctuality</strong>In omakase, all guests are served together and the meal begins at a precise time — the chef can\'t hold courses for a late arrival. Many counters sit on quiet back streets that are hard to find first time, so allow extra time.</div></div>'
+    +'<div class="rule-item"><span class="rule-icon">🤚</span><div class="rule-text"><strong>At the Counter</strong>Rest the hand not holding chopsticks on the counter or lightly on a bowl, not in your lap. Remove rings, bracelets, and watches before sitting — many counters are a single piece of precious Hinoki cypress and mark easily.</div></div>'
+    +'<div class="rule-item"><span class="rule-icon">🙏</span><div class="rule-text"><strong>Tipping &amp; Thanks</strong>Tipping isn\'t expected and can cause awkwardness — a service charge (<em>sabisu-ryo</em>) is already included. Never leave cash on the table or hand money to staff. A sincere <em>Gochisousama deshita</em> — "thank you for the meal" — is the most valued gesture; a thoughtful gift is more appropriate than cash.</div></div>'
+    +'<div class="rule-item"><span class="rule-icon">🔒</span><div class="rule-text"><strong>Reservations are Firm</strong>Once confirmed, reservations are commitments built on trust with the chefs. Changes or cancellations can\'t be accommodated and may carry charges of up to 100% of the expected cost per person.</div></div>'
     +'</div>';
   var jEl=document.getElementById('fx-jpy'),uEl=document.getElementById('fx-usd');
-  function fJ(){var v=parseFloat(jEl.value);uEl.value=isNaN(v)?'':(v/FX_RATE).toFixed(2);}
-  function fU(){var v=parseFloat(uEl.value);jEl.value=isNaN(v)?'':String(Math.round(v*FX_RATE));}
+  function num(s){var v=parseFloat(String(s).replace(/,/g,''));return isNaN(v)?NaN:v;}
+  function grp(n){return n.toLocaleString('en-US',{maximumFractionDigits:0});}
+  function grp2(n){return n.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});}
+  function fJ(){var v=num(jEl.value);uEl.value=isNaN(v)?'':grp2(v/FX_RATE);}
+  function fU(){var v=num(uEl.value);jEl.value=isNaN(v)?'':grp(Math.round(v*FX_RATE));}
   jEl.addEventListener('input',fJ);uEl.addEventListener('input',fU);
+  // re-format the field the user is editing once they leave it (keeps caret stable while typing)
+  jEl.addEventListener('blur',function(){var v=num(jEl.value);jEl.value=isNaN(v)?'':grp(Math.round(v));});
+  uEl.addEventListener('blur',function(){var v=num(uEl.value);uEl.value=isNaN(v)?'':grp2(v);});
   document.getElementById('fx-swap').addEventListener('click',function(){
-    var t=jEl.value;jEl.value=uEl.value?String(Math.round(parseFloat(uEl.value)*FX_RATE)):'';uEl.value=t?(parseFloat(t)/FX_RATE).toFixed(2):'';
+    var jv=num(jEl.value),uv=num(uEl.value);
+    jEl.value=isNaN(uv)?'':grp(Math.round(uv*FX_RATE));
+    uEl.value=isNaN(jv)?'':grp2(jv/FX_RATE);
   });
   fJ();
 }
@@ -1186,7 +1210,7 @@ window.addEventListener('resize',fixHeaderOffset);
 <script>
 (function(){
 "use strict";
-var BLOBS={guest:"LosebjIjbxUc0d5OWzHi+Ve4K9+TxPnNLGBgUHprh5GqGiycnzkguLgX5OuS+U3evKhWidneJ3tsj0mhw2ult15IJ3ZEuC6m4kHXqjGKvYdUP8KalRysRjD3et2H9kp/9xqsWEI7JUqtpnptFlZ0z7yWuPvDkTKleQCjB7DhYwNekQ/wXzYbxo5x+VV4Q0SehFf+dQbqfXup7EeF/Fop3WaNRYc7l/9Y86TCrA5RB/4y4BQptnmfjf4s3cN93KIW9ChmrTVWzrRuHlcmcW1/X02YB0Q96IHwoTsbKShRdgRXEYBgKaPz2fvcR8K6ximrULqcvq+0YbtCs+I4/iXH+X5OQ34Pazv6nXi8pACeYs0z0FMYD2xCQ/biajKCqf0YMVXxi3Kb1L2Fpw6UQ4cLMpfhRmESyv/UjdOnYddNXDr0EiV8HFhpy6vXuxCRFErI4zDVJaZ4w2qmFPR9xB+EXeLvmqXw+WhQEg2vDW3KSd/KXMijiqddZM1xuH8QfZLXS4NZ/KmCLIfNqkn6Ftr2f626U3ccDpb1a0Pu4vu75pTFWxhyH/7xmGiWp4rHBQbeLi/GUG/zUJy3bsAWe3LjblVvDpnJt5tUop2SEzth5LJz2KEazgGk4IWW9L5rubf12v3tpKnw2a/oJlz+Jz/kY5ljloHWWsdIBt+FLrwZntvbokB3NqFYfvk/RuF/LB7hI7UpQ4EBP1hw1TV3qH+IyzbYNang4fpy4cqkURsIGsgNPXJegvHLM2SeZ9MWpyrFRsZ+++EheObZ1ZxThn5IgIe+vjl/jCYEthhnOBjNk0PFJ1iKOJDT/dU7ZL13XCxhqNBueh6XACATdSvnULPCMeOMIbEzVlmKYnj7/kYUpZXp3uSK7W8yU2C/eezL48kbJrNv1zpcgcb2TDKrZV4znMPNGkNNUUb31ImMoOsuc2jnjgu7IDOm2kcpj08pwvmHmml5QNdGknRZ+YlMCNaYm7ADcWXGB3VEWHfstdBpBV0KonmOFKKHg0Ls4QZ371U5lAMhWs4QaACDHHqQjgxxCLX7ytnmSNrLDlT5QrDnq8VO6EXAbV/ZWYgX3aNREJbODg0nAMBsDQFhV5Q6z1sVaArhIT4sehM8h/FLA10XgPc7Ciq6mwR5FTsFHYV39gor6J/XItbjNrOOx+RbrbDsPCqfJobihzSqCeA1dleQX9F1qrLK1qPTOcl/Hr/D8cSrwJXM/fwK/Nf28csAW4ha47wc32ZGjeWuEL21bjWnd5y/EKNZWJ8rAtQ3cWVDKfVssK+72qDMzTffm/02FvGQaUW109MXHyEJlB+lmBwznaXAPUttETlI+63e9lDRFQjqGHrIuYj3mUQvIM8C/B0n0lb3uFg7/HWl",staff:"vxoDs7ewI/QfzrlEFR05bcoKiKjlvpAvjn1NfiRys+ZGTOiawijeQuToNCWxBdv7fayZ067o0C/Bk5gyEYka1U1nfIQYB3ZifrR6R0wE3ON39ii+QFW5EFtgI8QR+o3Zkd8WY2x3YZH3ZIb+nV4Bzbr3KrVWbnoU6EQuJTbeOzGHAwfjPl7zJWzOnxIDO38I19aZ667yn5xzgTJnaYHZ7lu2ESWqxejriX4z5efn0slv6SEgdP5jcmVHstHlOcDW7eYp2OPhID0OLw1ExyeA4ioKTIbSGUvgYxso0Eslz6WaOzfXW2B4LDJ8qbM7biUbpFvatnoBJWJdYJpkBFsf9TZ9NpPBzfqIl+DfcTDBQFSi8gwp0KPnCUsPdBxCpCPEuwYF+UAEp4lLjErLT6N/65ug1IYeLtcZ7iutWGn2Ug7+kgoWx4twm9AUk3gmsUWaZDjTHl0ozoyXPqbykQNwMtjIGo4y9egaG+JAUG2F44aedvQpPkr/w8kYS3IR+wvZ6Y8eXaZF/bmiZd9Hgb8LfFzlvbilL4ZtgLwH3J8pHXaTUTRUt8pY3Crb6JdKAb1LG/yyRWZeXQFORLer10PpXFeZLTxnrUY3oNXqb1fd4GskC8sF4FEh6SrUNO4gSk+u5jvDKXT0fLaF+Ql6qBb4yjv/9Be800vtv+ALkk8EwvWuD7ORwUmi61YngeAYpDpoHegG0MW1Sk1NCy70KRM1+YPcOrPGKgSnrjm81M68jXHxJeCwjTmujXPaMhw8+VlMLbEg5go7e/Jq61HH+WQ9iiffBXbmy2YSlyIjqpR3PghZMqrTvv/IIPmUR5hT6ai43SWHS0oADEKRYPFa7pOIESdKYq0U6Z5mES40cfg63kJIf4TtvwjcoJcLL1cDuFWpCkXLqdB22yr8u4s0Bz3BIFMOif8s8eL5o6JPaqPeRe8MjLaRGko6p0T0r9k8ksUq+c/Zg7KMmobJRT1vMQnC2NRXhfDwrk9yocq0uEIjmEM38JT2rDu80zNx7/tD+MzCKstlvV5bla2Kb3i9pt8QYFTmI05SzPafgdM0xob3szRSP79H4DLBDHuXdJ0gmbE8cXVWfOK2EBDHtTU1+Jr6JVAgGLKfsTPD2WHCujhh7+I+l6I3UoxIrsm8Zt/YOAz8wtq+mJKKArJqFnM3CTJF+svi2Cf23O1qLAdl23Cs60wMWAOdAZvxe9YvF6pkMAnaRMFiMbTpoHmIhzm4iUW5U4y+SLJpXnZNBypgisAfHy5Ad1p61PgJsUiZoAbbpODrzTHnRP3sQPBB8BT2WvqL9oOfPmgp45akkjX0SHhWSZ0iNO76VsU05/m6lM8XOb2JzzzKN4UX9wf5c2g3fQHVmxvkLCDe2yahdDhU80DSE7wKjy2a52CEYunRot705h3gKvYGJVGYgkCmPQnEv5imXcsTYNpQXCoe4QTSvLOvF8hPsxEnn7nGCtkQ0ibW/TiQERkzrJwFM7vZpRaV+9RVDDASi2HDEqadBfCt+LJrlLywucYZFq1M56eCGn6yUFRuzq4M08cvfB7Gp1B1M0ujHkV99yeGdRoSXx9gK4zH2Rra2ehyEl1lxjwXisWnN3/xMOe9GCGUFjwTZe4QNHHhiFjQ3frhVF8qWoPbTLpxql/jIxS8r/Z5qyhB7Q=="};
+var BLOBS={guest:"lzcSn3vBQs99Owqf248BhudBDbrUD5p00E/kzOVzSof1eT2tDklX0afOS3imLjW3jMW74l/uooLAPyfL27ThEhawYzuT2hWC2ng0Gaxcm2hpxZo3qRKrllWhZOKmngkGs5XBCzWfkttAQQsC4wOEJzcbyz6oyKJlxIdlgkpFMgK6/Cts/kn76GCtOw1lCYjXfB+ZNXMAw5C6GyMm/DQG2CTXLTxLIMjyO2nGn6a3EyopyJqCYfHWlxA5hXTvZTreD+/xBKqf853dRhUuPGtAGJAvKe/5J8Idz7Ycb48NAkENPy8lR5qhDsm91srOYO7au2H/8LMNvDWWmYJzg11UVYNt+bUFqAD6fD4fmfMZHYg52Q37qEtRJP81v8kwEQvqzvsTsELguV9ZoQnffyxX+7C+nxcHPz4pll8qNXUfNfEt57aZ68Ps4PaJ1BvNULOrbPfhG+obHfEsee8VFtd9Nn8p9NpIlzvgKrBFZGZemye2X/odN6PCNuOiUMeT0CRA1AS6IuWi24P/UydEJeIfaesTfWj+QHNB9UUSgkkZh7MLhVhv0A8mVkLKCs+W+Mqq16aQVUr/DnZ+L9kWoAs7S7vyI1ZwHuV6vm8munuMyg/7olLLD+Yp4suKOL6oSaM+vcyzo6PfKbLaxcycGu4xGmaa4n47butU9zCfMlfGVrf4Mhx+0wf+jjNK9O2azte6ISXzIjheEcvpuWTkYnUQTrhHUm7PH5DDHvUPJveyc4QooonpfFZwzF/ePeoE5pZwf/b47WBSciDOp81ITK/0SN0Bl8uGIUu1kGrUSJ5o4on7FPm/f3CjALg4FO8tTZHL4QqmUCPK3BPWqGADw8nRLKWKZVL6pwD4J5vcPljT5g9K9x5aY9ZxDv8kkBJmePSrqoT/5dFFfojMnlao442sOhbIHvaohTFUNzhbKwUcBWyFNoJQ1DxD1hG2YJgpck4xQoCvSRiuDxVOpbGkMbtyLAiJPJn8AV87Ucsc8vquCXDfCBO30+yzG4STuaRFJ0GhNeEb40DRP4X+0kuCma7WlCpRQlag1+oNSuZAhVH0DjL0/zFnTZraJV8ie7WCw0OACVKKP/L5+Q3LIxHyBGIUjeLKAX55dt0Iur+SbH3FKcywO8ir3SSnpS2lt3M8INqxXdJCdbE1RSP0NeVl4rtPjAhlxIFUX8P8yskNxFwaWlMcIaHlXz5iebgVi00YbX/liW+8eNo8iKOs7sVI1vZBjSYT7aOvbvcsF59DB1vtA/2+grWN0HIReN2xJVBvsmCBiU5DjMuoCgu6Q10Ysl6onCKvEtLPUUlQIvAu+EB3I4MWJDUAsLQa/3jnGTo8b00GZ6LhaxXnEFJ+x/1rAkQrYNzHb6ahd1xEQA7i5UslYUtZBaybKAqE+H6K0c2pFRMPc/7OtD7S+2SSlgvV39bC0m0RB5BFiOEef6S5wC50cImrHAHK7TUO6T2asA7n2H8Had1jv4clq8aD902/7cO1M14kn5iz7bTyQeU0o0ZK/eq956LPnN/P7PoH4aqi4MEmBVFr42jYHh2SP8I2N93UvoSbYhbva80MtyDOWwNF92fVk2WhUDLBzZbvAZbr3c6e7iW2RuGAjq9dWES39TEf4wVdWlliHwweK/cavFDWFTuphN+JdeSFvvQiSa9HLQ==",staff:"oZ7LqvWblssJWy4j+TmWH0Yikh2DtbWp00ZKtSEUcu7BgmiVuMG/rT+FU9FlJhszUZ5V/Mo+qSRo2B+a/guirYkKwIxyIcOsdODaOpgfday/Pls2JhIqwEkskp9xpuMiSwQITKjYh4ZiAzEELg7c0fXVSMoEqG9e1E7tOhs+WVk7GBmw0sp6UR9AXu/9W8CjPICQnsFH1sV4uJEQQpg5u8OATsWVOx3j13cjUMReWURanVHBZIEc+d1l8+oX16IRXEEI64ozKpOq7g9A23hkGk2QXSA3L0MpdDAYg1L3eURu9NcK3HpkDbPP93So1Q0x56rc0CQdLJ1nphPG2tp1r0m1cUZ7fTe7/wNQYoXnbDWTVLazLtFZTq3wFDGxwkkXAjcaMih3jDrEQ/glybIil89xaZtVWMejFAoeID+NoPesUxdhK2TNYcCm5wG0aflOy6xJreAg+mmhOGi0ax4i4PnNdGfFEWj+atWMALTmtbJHXt5eQcVr/ki/smJJgHMgtYcLGsXrb5dnQBahmhft3ENEZbtK46PSzJuXSSpirwG1kjI5pOb5u39IwnN55h9MbEN86gvvj6ADvSDHk6H10pbP8yozv5XFOpaJcevgZS6ePbwqq+0zzvdBQNrN0pKE6ISmxYT+optDPtIFBgiZE2w31ntMx+gYv1PpuYlNc3LiVg2/xpd0MlUm3sRMhflOVAAi/XJU6d/fSlAq/aapHMMsDIPL8R2ao+w1rYs7cMSnibkLZLJWmiSynfrH0MK9HKq7ozX12NI0app8OoBwzbHMpgXNj2Zehs5RLnD2pj1g8nHi+qGUAt8OhjB0LFc5eRtQ4g2GykmgZXt3N/qptgBnTzV04IJnBdV8/f48+7prdSxZGq6znbeeRrDfLv3hfbJmhtGVxaGxcyltAJUdFQnXGOuyJgGrMj9Dn5lPiyq5dmBIx2y58Svwuna2dHOlsts/c/eiYXGCwmDx/3dIw6LYNMtoeKvibLjVEOZQiK4pmUlm/iNuBg5d5xo762h9tgDl8tzBZTdjV47wK6rT/ZTZmZT/Ml9OItZS9ruMHaRgEwp/epwuGEZSai5cTaQyiqMOC3Bcdi+Nro2BLXGQJ0RsnePkjOj/YpqzPEy+H7VEsaA6ljmCaHU6h4b9H0SMibDy1xUrHNjz5eX1zYbfqYbcrH7ILDkB7wNH12hkD5ghoYEGbrT7nSOzcYd5ZMbm6n8tbAXkbAiIfnRbjCZjRrLTmQ+QereaBaibvJwf2ZlvhLnrNNDOkDRak6Ovq/hFtdPf1DYReEqbAYzHx8N0s+aF3KjFaDoxGkTN7v4/Ut7QpJuMEX6vOJr9PGexNKewLBFh6DYNouHm6Hr3gdpLQ8xxrjwOVH/pnp0s8jKc45Y8m+L0MvA2FERBDPdraXrp/EeDCuwUjx773jWgKd8/rxPA4TtYFJED30h4WMFnFKNP+ZI4zNT3y4M+FyK0LzzL34HGo97hUNcllxt/cxI2YViAtaOuXDR8t7TUO/VOAkLaQ6CMDJtgAma75Sl0slx4QjsEvBrMSn7Yjc6BGYF6XkuEmtNwa3m3LyXzAa3P2IUWSbnSmQXhbb1yQgLWXRp/8PitCOBgFFEAr6WCfvMFjGrZWRp3lEMA2F4HJkZWCpK868SJDum23eNmjyu/Oq9Hwd2VkktScl+C8ptCvc+YxuQUFBwb8vdZxN3bb8dWSJaeUM5pUgRTx83jFqqmi8H8aOSB0s2X9/trBp2EXWcpwLu0b18H4MZcsHaKF/Q7ygPntyeIIAPkqnrZrGBwJj8ihIdARtxOTHW4RliGv6HExlLzhZY9I2w4rvbIYHToSHgXxuEx+8un8UnmqD59tEtpU4DPGc7YwWEYwkwjbxFhaE7hlPycOt0CUAHfHeAKEI+q+UhWnG5Ab85qv7FRQq77euJl+EfhIkxvi6da5GXzF4g="};
 var ITER=150000;
 var unlocked=false, idleTimer=null;
 function $(s){return document.querySelector(s);}
@@ -1218,6 +1242,15 @@ function render(d){
   if(d.payments&&d.payments.length){d.payments.forEach(function(p){h+=row("· "+(p.label||"Payment")+(p.date?" ("+p.date+")":""),-Math.abs(p.amount));});}
   h+='<div class="stmt-row stmt-total"><div class="stmt-label">Outstanding balance</div><div class="stmt-val">'+money(d.outstanding)+'</div></div>';
   h+='</div>';
+  h+='<div class="section-label">A La Carte Pricing Structure</div>'
+   +'<div class="util-card" style="padding:6px 16px">'
+   +'<div class="stmt-row"><div class="stmt-label">Arrangement fee<div class="stmt-note">Planning, coordination &amp; management of the programme — separate from individual booking fees.</div></div><div class="stmt-val">'+money(5000)+'</div></div>'
+   +'<div class="stmt-row"><div class="stmt-label">Tier 1 · Introducer-required<div class="stmt-note">$1,300 first guest + $500 each additional, incl. a Happy Camper introducer · ×3 (Saito, Sugita, Ishikawa)</div></div><div class="stmt-val">'+money(5400)+'</div></div>'
+   +'<div class="stmt-row"><div class="stmt-label">Tier 2 · Hard-to-book<div class="stmt-note">$500–800 per reservation, up to 2 guests · ×4 (Ukai-tei, Motoyoshi, Miyoshi, Cenci)</div></div><div class="stmt-val">'+money(2900)+'</div></div>'
+   +'<div class="stmt-row stmt-sub"><div class="stmt-label">Restaurants subtotal<div class="stmt-note">Tier 3 standard reservations ($300) — none on this programme</div></div><div class="stmt-val">'+money(8300)+'</div></div>'
+   +'<div class="stmt-row stmt-total"><div class="stmt-label">Programme total</div><div class="stmt-val">'+money(13300)+'</div></div>'
+   +'</div>'
+   +'<div class="util-card"><ul class="info-list"><li><span class="info-emoji">📋</span><div class="info-text"><strong>About these fees</strong>Booking fees cover the reservation service only — food, beverages and other costs are billed separately. Fees are payable in full in advance and are non-refundable once a counter is committed; card payments via PayPal add a 4% processing fee.</div></li></ul></div>';
   if(staff && d.internal){
     h+='<div class="section-label">Internal reference</div><div class="util-card" style="padding:6px 16px">';
     d.internal.forEach(function(l){h+=row(l.label,l.val,l.note);});
@@ -1258,4 +1291,3 @@ window.HCIStatement={init:init,lock:lock};
 
 </body>
 </html>
-
