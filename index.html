@@ -523,77 +523,59 @@ var TRIP = {
   startDate:'2027-03-28',
   endDate:  '2027-04-07',
   days:[
-    { date:'2027-03-28', dayNum:1, weekday:'Sunday, 28 March', city:'Tokyo', cityClass:'', hotel:'Four Seasons Hotel Tokyo at Otemachi', hq:'Four Seasons Hotel Tokyo at Otemachi', hotelNote:'Night 1 \u2013 your Tokyo base', hosted:false,
-      notes:'Arrive into Tokyo at the loveliest moment of the year \u2014 peak cherry blossom. Settle into the Four Seasons Otemachi and ease in with an early, celebratory teppanyaki dinner. A note that runs through the whole trip: the firm preference is an early start, 5\u20136pm, over a late one.',
+    { date:'2027-03-28', dayNum:1, weekday:'Sunday, 28 March', city:'Tokyo', cityClass:'', hotel:'Four Seasons Otemachi', hq:'Four Seasons Hotel Tokyo at Otemachi', hotelNote:'', hosted:false, notes:'',
       stops:[
-        { time:'Daytime', type:'flight', badge:'Arrival', badgeType:'self-booked', title:'Arrive Tokyo', sub:'Private transfer to Four Seasons Otemachi', loc:'Four Seasons Hotel Tokyo at Otemachi', addr:'1-2-1 Otemachi, Chiyoda City, Tokyo', q:'Four Seasons Hotel Tokyo at Otemachi', notes:'A private transfer takes you into the city and into the Otemachi tower. Draw a little yen at the airport \u2014 a few counters and smaller shops prefer cash.', alert:null },
-        { time:'~17:30', type:'restaurant', badge:'Requested', badgeType:'requested', title:'Ginza Ukai-tei \u00b7 teppanyaki', sub:'Welcome dinner \u00b7 teppanyaki \u00b7 early seating', loc:'Ginza Ukai-tei', addr:'Ginza, Chuo City, Tokyo', q:'Ginza Ukai-tei Tokyo', notes:'A warm first night on the teppan \u2014 Justin\u2019s favourite room in Tokyo, and new for Brittany. An easy, generous welcome after the flight. Being requested for the new dates.', alert:null, dietary:'Both guests avoid organ meats &amp; exotic game; Justin also no eel.' }
+        { time:'Daytime', type:'flight', badge:'Arrival', badgeType:'logistics', title:'Arrival Tokyo', sub:'', loc:'Four Seasons Otemachi', addr:'1-2-1 Otemachi, Chiyoda City, Tokyo', q:'Four Seasons Hotel Tokyo at Otemachi', notes:'', alert:null },
+        { time:'Evening', type:'restaurant', badge:'To arrange', badgeType:'pending', title:'Dinner', sub:'', loc:'', addr:'', q:'', notes:'', alert:null }
       ] },
-    { date:'2027-03-29', dayNum:2, weekday:'Monday, 29 March', city:'Hakone', cityClass:'', hotel:'Gora Kadan', hq:'Gora Kadan Hakone', hotelNote:'Ryokan \u00b7 onsen \u00b7 in-house kaiseki', hosted:false,
-      notes:'Out of the city to Hakone and into Gora Kadan \u2014 onsen, quiet, and mountain air, with Mt Fuji on a clear day. Two nights of ryokan rhythm: bath, kaiseki, rest.',
+    { date:'2027-03-29', dayNum:2, weekday:'Monday, 29 March', city:'Hakone', cityClass:'', hotel:'Gora Kadan', hq:'Gora Kadan Hakone', hotelNote:'Ryokan · onsen', hosted:false, notes:'',
       stops:[
-        { time:'Daytime', type:'transport', badge:'Transfer', badgeType:'requested', title:'Transfer to Hakone', sub:'Private car \u00b7 ~1.5 h \u00b7 to Gora Kadan', loc:'Gora Kadan', addr:'1300 Gora, Hakone, Ashigarashimo District, Kanagawa', q:'Gora Kadan Hakone', notes:'A private car out to the Hakone hills and the ryokan at Gora. Routing and timing confirmed once the flow is agreed.', alert:null },
-        { time:'Evening', type:'restaurant', badge:'Self-booked', badgeType:'self-booked', title:'Kaiseki at Gora Kadan', sub:'Ryokan dinner \u00b7 seasonal kaiseki', loc:'Gora Kadan', addr:'Gora, Hakone', q:'Gora Kadan Hakone', notes:'Dinner is taken in-house \u2014 a seasonal kaiseki progression at the ryokan, booked direct with Gora Kadan. Dietary notes flagged to the kitchen in advance.', alert:null, dietary:'Justin \u2014 no eel; both \u2014 no organ meats or exotic game. Flag to the ryokan kitchen ahead of arrival.' }
+        { time:'Daytime', type:'transport', badge:'Transfer', badgeType:'logistics', title:'Transfer to Hakone · Gora Kadan', sub:'', loc:'Gora Kadan', addr:'1300 Gora, Hakone, Kanagawa', q:'Gora Kadan Hakone', notes:'', alert:null },
+        { time:'Evening', type:'restaurant', badge:'Self-booked', badgeType:'self-booked', title:'Gora Kadan dinner', sub:'In-house ryokan kaiseki', loc:'Gora Kadan', addr:'Gora, Hakone', q:'Gora Kadan Hakone', notes:'', alert:null }
       ] },
-    { date:'2027-03-30', dayNum:3, weekday:'Tuesday, 30 March', city:'Hakone', cityClass:'', hotel:'Gora Kadan', hq:'Gora Kadan Hakone', hotelNote:'Ryokan \u00b7 onsen \u00b7 in-house kaiseki', hosted:false,
-      notes:'A full Hakone day at your own pace \u2014 the open-air museum, Lake Ashi and its torii, Owakudani, or simply the baths. A second kaiseki dinner at the ryokan.',
+    { date:'2027-03-30', dayNum:3, weekday:'Tuesday, 30 March', city:'Hakone', cityClass:'', hotel:'Gora Kadan', hq:'Gora Kadan Hakone', hotelNote:'Ryokan · onsen', hosted:false, notes:'',
       stops:[
-        { time:'Daytime', type:'activity', badge:'Suggestion', badgeType:'suggestion', title:'Hakone at leisure', sub:'Open-air museum \u00b7 Lake Ashi \u00b7 Owakudani \u00b7 onsen', loc:'Hakone Open-Air Museum', addr:'Hakone, Kanagawa', q:'Hakone Open-Air Museum', notes:'Sculpture in the hills, the red torii standing in Lake Ashi, the steaming Owakudani valley, or the Pola Museum in the forest \u2014 taken however the day feels.', alert:null },
-        { time:'Evening', type:'restaurant', badge:'Self-booked', badgeType:'self-booked', title:'Kaiseki at Gora Kadan', sub:'Ryokan dinner \u00b7 seasonal kaiseki', loc:'Gora Kadan', addr:'Gora, Hakone', q:'Gora Kadan Hakone', notes:'A second in-house kaiseki to close the Hakone leg, booked direct with the ryokan.', alert:null, dietary:'Justin \u2014 no eel; both \u2014 no organ meats or exotic game.' }
+        { time:'Evening', type:'restaurant', badge:'Self-booked', badgeType:'self-booked', title:'Gora Kadan dinner', sub:'In-house ryokan kaiseki', loc:'Gora Kadan', addr:'Gora, Hakone', q:'Gora Kadan Hakone', notes:'', alert:null }
       ] },
-    { date:'2027-03-31', dayNum:4, weekday:'Wednesday, 31 March', city:'Kyoto', cityClass:'kyoto', hotel:'The Shinmonzen', hq:'The Shinmonzen Kyoto', hotelNote:'Nights 4\u20136 \u00b7 your Kyoto base', hosted:false,
-      notes:'West to Kyoto, the old capital, with the blossom near its peak. Three nights here at The Shinmonzen: temples and gardens by day, a considered dinner each evening. Tonight opens with Monk \u2014 a wood-fire room Justin has set his heart on.',
+    { date:'2027-03-31', dayNum:4, weekday:'Wednesday, 31 March', city:'Kyoto', cityClass:'kyoto', hotel:'The Shinmonzen', hq:'The Shinmonzen Kyoto', hotelNote:'', hosted:false, notes:'',
       stops:[
-        { time:'Daytime', type:'transport', badge:'Transfer', badgeType:'requested', title:'Transfer to Kyoto', sub:'Shinkansen \u00b7 ~2.5 h via Tokyo', loc:'Kyoto Station', addr:'Kyoto Station, Shimogyo Ward, Kyoto', q:'Kyoto Station', notes:'Back to Tokyo Station and onto the Tokaido Shinkansen to Kyoto \u2014 a smooth half-day on rails. A private car meets you in Kyoto and takes you to The Shinmonzen.', alert:null },
-        { time:'~13:00', type:'restaurant', badge:'Suggestion', badgeType:'suggestion', title:'Kyoto lunch \u00b7 HCI\u2019s pick', sub:'Open \u00b7 light arrival lunch', loc:'Kyoto', addr:'Kyoto', q:'Kyoto lunch', notes:'A light, open lunch on arrival \u2014 HCI to choose once the day is set.', alert:null },
-        { time:'Afternoon', type:'activity', badge:'Suggestion', badgeType:'suggestion', title:'Kyoto, first afternoon', sub:'Fushimi Inari \u00b7 Gion \u00b7 Philosopher\u2019s Path', loc:'Fushimi Inari Taisha', addr:'Fushimi Ward, Kyoto', q:'Fushimi Inari Kyoto', notes:'A first taste of Kyoto \u2014 the vermilion torii of Fushimi Inari, the lanes of Gion at dusk, or the cherry-lined Philosopher\u2019s Path at its peak.', alert:null },
-        { time:'~17:30', type:'restaurant', badge:'Suggestion', badgeType:'suggestion', title:'Monk \u00b7 wood-fire', sub:'Dinner \u00b7 wood-fired \u00b7 Justin\u2019s pick', loc:'Monk', addr:'Philosopher\u2019s Path, Sakyo Ward, Kyoto', q:'Monk Kyoto restaurant', notes:'A celebrated wood-fire counter on the Philosopher\u2019s Path. HCI had gently advised against it, but Justin still wants it \u2014 so it stays on the canvas, to be requested.', alert:'HCI previously advised against \u2014 included at Justin\u2019s request', dietary:'Both \u2014 no organ meats or exotic game; Justin \u2014 no eel.' }
+        { time:'Daytime', type:'transport', badge:'Transfer', badgeType:'logistics', title:'Transfer to Kyoto', sub:'', loc:'Kyoto Station', addr:'Kyoto Station, Shimogyo Ward, Kyoto', q:'Kyoto Station', notes:'', alert:null },
+        { time:'Midday', type:'restaurant', badge:'To arrange', badgeType:'pending', title:'Lunch', sub:'', loc:'', addr:'', q:'', notes:'', alert:null },
+        { time:'Evening', type:'restaurant', badge:'To arrange', badgeType:'pending', title:'Dinner', sub:'', loc:'', addr:'', q:'', notes:'', alert:null }
       ] },
-    { date:'2027-04-01', dayNum:5, weekday:'Thursday, 1 April', city:'Kyoto', cityClass:'kyoto', hotel:'The Shinmonzen', hq:'The Shinmonzen Kyoto', hotelNote:'Kyoto base', hosted:false,
-      notes:'A full Kyoto day \u2014 Arashiyama\u2019s bamboo, Kiyomizu-dera, Nishiki Market and its knife shops, a tea ceremony if the mood is right. Dinner at Miyoshi.',
+    { date:'2027-04-01', dayNum:5, weekday:'Thursday, 1 April', city:'Kyoto', cityClass:'kyoto', hotel:'The Shinmonzen', hq:'The Shinmonzen Kyoto', hotelNote:'', hosted:false, notes:'',
       stops:[
-        { time:'~12:30', type:'restaurant', badge:'Suggestion', badgeType:'suggestion', title:'Kyoto lunch \u00b7 HCI\u2019s pick', sub:'Open', loc:'Kyoto', addr:'Kyoto', q:'Kyoto lunch', notes:'An open lunch slot \u2014 HCI to choose. Nishiki Market is an easy, characterful option.', alert:null },
-        { time:'Afternoon', type:'activity', badge:'Suggestion', badgeType:'suggestion', title:'Kyoto \u00b7 temples, craft & tea', sub:'Arashiyama \u00b7 Nishiki \u00b7 tea ceremony', loc:'Arashiyama Bamboo Grove', addr:'Arashiyama, Ukyo Ward, Kyoto', q:'Arashiyama Bamboo Grove Kyoto', notes:'Bamboo and Zen gardens at Arashiyama, Nishiki Market with Aritsugu knives, and a formal tea ceremony \u2014 arranged to taste.', alert:null },
-        { time:'~17:30', type:'restaurant', badge:'Requested', badgeType:'requested', title:'Miyoshi', sub:'Dinner \u00b7 Japanese \u00b7 early seating', loc:'Miyoshi', addr:'Kyoto', q:'Miyoshi Kyoto', notes:'A refined Japanese counter, taken early \u2014 being requested for the new dates.', alert:null, dietary:'Both \u2014 no organ meats or exotic game; Justin \u2014 no eel.' }
+        { time:'Midday', type:'restaurant', badge:'To arrange', badgeType:'pending', title:'Lunch', sub:'', loc:'', addr:'', q:'', notes:'', alert:null },
+        { time:'Evening', type:'restaurant', badge:'To arrange', badgeType:'pending', title:'Dinner', sub:'', loc:'', addr:'', q:'', notes:'', alert:null }
       ] },
-    { date:'2027-04-02', dayNum:6, weekday:'Friday, 2 April', city:'Kyoto', cityClass:'kyoto', hotel:'The Shinmonzen', hq:'The Shinmonzen Kyoto', hotelNote:'Kyoto \u00b7 last night', hosted:false,
-      notes:'A last Kyoto day \u2014 an optional geisha evening, more temples and craft, the city in full bloom. Dinner at Cenci, one of Kyoto\u2019s best Italian tables.',
+    { date:'2027-04-02', dayNum:6, weekday:'Friday, 2 April', city:'Kyoto', cityClass:'kyoto', hotel:'The Shinmonzen', hq:'The Shinmonzen Kyoto', hotelNote:'', hosted:false, notes:'',
       stops:[
-        { time:'~12:30', type:'restaurant', badge:'Suggestion', badgeType:'suggestion', title:'Kyoto lunch \u00b7 HCI\u2019s pick', sub:'Open', loc:'Kyoto', addr:'Kyoto', q:'Kyoto lunch', notes:'A second open Kyoto lunch \u2014 HCI to choose.', alert:null },
-        { time:'Afternoon', type:'activity', badge:'Suggestion', badgeType:'suggestion', title:'Private geisha / ozashiki', sub:'Optional \u00b7 by introduction \u00b7 Gion', loc:'Gion', addr:'Gion, Higashiyama Ward, Kyoto', q:'Gion Kyoto', notes:'An evening with geiko and maiko in Gion \u2014 arranged through introduction. Optional, depending on appetite and availability.', alert:null },
-        { time:'~17:30', type:'restaurant', badge:'Requested', badgeType:'requested', title:'Cenci', sub:'Dinner \u00b7 Italian \u00b7 early seating', loc:'Cenci', addr:'Kyoto', q:'Cenci Kyoto', notes:'One of the city\u2019s finest Italian kitchens, working Kyoto produce \u2014 being requested for the new dates.', alert:null, dietary:'Both \u2014 no organ meats or exotic game; Justin \u2014 no eel.' }
+        { time:'Midday', type:'restaurant', badge:'To arrange', badgeType:'pending', title:'Lunch', sub:'', loc:'', addr:'', q:'', notes:'', alert:null },
+        { time:'Evening', type:'restaurant', badge:'To arrange', badgeType:'pending', title:'Dinner', sub:'', loc:'', addr:'', q:'', notes:'', alert:null }
       ] },
-    { date:'2027-04-03', dayNum:7, weekday:'Saturday, 3 April', city:'Tokyo', cityClass:'', hotel:'Janu Tokyo', hq:'Janu Tokyo', hotelNote:'Nights 7\u201310 \u00b7 Azabudai Hills', hosted:false,
-      notes:'Back to Tokyo for the finale \u2014 four nights at Janu, built around the great counters. Tonight: Sushi Saito.',
+    { date:'2027-04-03', dayNum:7, weekday:'Saturday, 3 April', city:'Tokyo', cityClass:'', hotel:'Janu', hq:'Janu Tokyo', hotelNote:'Azabudai Hills', hosted:false, notes:'',
       stops:[
-        { time:'Daytime', type:'transport', badge:'Transfer', badgeType:'requested', title:'Transfer to Tokyo', sub:'Tokaido Shinkansen \u00b7 ~2.5 h', loc:'Tokyo Station', addr:'Tokyo Station, Chiyoda City, Tokyo', q:'Tokyo Station', notes:'The Shinkansen back to Tokyo, on to Janu in Azabudai Hills. An easy half-day, closing the Kyoto chapter.', alert:null },
-        { time:'~17:30', type:'restaurant', badge:'Rebooking', badgeType:'requested', title:'Sushi Saito', sub:'Dinner \u00b7 Edomae sushi \u00b7 early seating', loc:'Sushi Saito', addr:'Tokyo', q:'Sushi Saito Tokyo', notes:'A widely-held benchmark among the very best sushi counters in Japan. Was confirmed under the old dates \u2014 being rebooked to the new ones.', alert:'Confirmed under old dates \u00b7 rebooking to new dates \u00b7 no fragrance at the counter', dietary:'Justin \u2014 no eel (unagi &amp; anago). Both \u2014 no organ meats or exotic game.' }
+        { time:'Daytime', type:'transport', badge:'Transfer', badgeType:'logistics', title:'Transfer to Tokyo', sub:'', loc:'Tokyo Station', addr:'Tokyo Station, Chiyoda City, Tokyo', q:'Tokyo Station', notes:'', alert:null },
+        { time:'Evening', type:'restaurant', badge:'To arrange', badgeType:'pending', title:'Dinner', sub:'', loc:'', addr:'', q:'', notes:'', alert:null }
       ] },
-    { date:'2027-04-04', dayNum:8, weekday:'Sunday, 4 April', city:'Tokyo', cityClass:'', hotel:'Janu Tokyo', hq:'Janu Tokyo', hotelNote:'Tokyo', hosted:false,
-      notes:'A Tokyo day to taste \u2014 a tempura lunch at Motoyoshi, the city in the afternoon, kaiseki at Ishikawa in the evening.',
+    { date:'2027-04-04', dayNum:8, weekday:'Sunday, 4 April', city:'Tokyo', cityClass:'', hotel:'Janu', hq:'Janu Tokyo', hotelNote:'Azabudai Hills', hosted:false, notes:'',
       stops:[
-        { time:'~12:00', type:'restaurant', badge:'Rebooking', badgeType:'requested', title:'Tempura Motoyoshi', sub:'Lunch \u00b7 tempura', loc:'Tempura Motoyoshi', addr:'Tokyo', q:'Tempura Motoyoshi Tokyo', notes:'An intimate tempura counter, course by course. Previously confirmed \u2014 being rebooked to the new dates.', alert:'Previously confirmed \u00b7 rebooking to new dates', dietary:'Both \u2014 no organ meats or exotic game; Justin \u2014 no eel.' },
-        { time:'Afternoon', type:'activity', badge:'Suggestion', badgeType:'suggestion', title:'Tokyo, built to taste', sub:'Asakusa \u00b7 teamLab \u00b7 Shibuya \u00b7 art \u00b7 shopping', loc:'Tokyo', addr:'Tokyo', q:'Tokyo', notes:'Senso-ji and Asakusa, teamLab, Shibuya Sky and the crossing, a contemporary-art museum, or Ginza and Kappabashi for knives \u2014 shaped to the day.', alert:null },
-        { time:'~17:30', type:'restaurant', badge:'Requested', badgeType:'requested', title:'Ishikawa Kagurazaka', sub:'Dinner \u00b7 kaiseki \u00b7 early seating', loc:'Ishikawa', addr:'Kagurazaka, Shinjuku City, Tokyo', q:'Ishikawa Kagurazaka Tokyo', notes:'A kaiseki benchmark on a quiet Kagurazaka back-street \u2014 being requested for the new dates.', alert:null, dietary:'Both \u2014 no organ meats or exotic game; Justin \u2014 no eel.' }
+        { time:'Midday', type:'restaurant', badge:'To arrange', badgeType:'pending', title:'Lunch', sub:'', loc:'', addr:'', q:'', notes:'', alert:null },
+        { time:'Evening', type:'restaurant', badge:'To arrange', badgeType:'pending', title:'Dinner', sub:'', loc:'', addr:'', q:'', notes:'', alert:null }
       ] },
-    { date:'2027-04-05', dayNum:9, weekday:'Monday, 5 April', city:'Tokyo', cityClass:'', hotel:'Janu Tokyo', hq:'Janu Tokyo', hotelNote:'Tokyo', hosted:false,
-      notes:'An early start at Toyosu, a casual wagyu-sandwich lunch, and Sushi Sugita in the evening.',
+    { date:'2027-04-05', dayNum:9, weekday:'Monday, 5 April', city:'Tokyo', cityClass:'', hotel:'Janu', hq:'Janu Tokyo', hotelNote:'Azabudai Hills', hosted:false, notes:'',
       stops:[
-        { time:'~06:00', type:'activity', badge:'Walk-in', badgeType:'walk-in', title:'Toyosu fish market', sub:'Early AM \u00b7 sushi breakfast \u00b7 Sushi Dai', loc:'Toyosu Market', addr:'Toyosu, Koto City, Tokyo', q:'Toyosu Market Tokyo', notes:'An early-morning visit to Toyosu \u2014 the tuna auction viewing and a sushi breakfast at Sushi Dai. Monday is a trading day; the market is closed Sundays and some Wednesdays.', alert:null },
-        { time:'~12:30', type:'restaurant', badge:'Suggestion', badgeType:'suggestion', title:'Wagyu sandwich lunch', sub:'Lunch \u00b7 beef \u00b7 HCI to choose venue', loc:'Tokyo', addr:'Tokyo', q:'wagyu sandwich Tokyo', notes:'A casual, brilliant wagyu-sandwich lunch \u2014 HCI to choose the venue.', alert:null },
-        { time:'~17:30', type:'restaurant', badge:'Rebooking', badgeType:'requested', title:'Sushi Sugita', sub:'Dinner \u00b7 Edomae sushi \u00b7 early seating', loc:'Sushi Sugita', addr:'Tokyo', q:'Sushi Sugita Tokyo', notes:'One of the most sought-after Edomae counters in the city. Previously confirmed \u2014 being rebooked to the new dates.', alert:'Previously confirmed \u00b7 rebooking to new dates \u00b7 no fragrance at the counter', dietary:'Justin \u2014 no eel (unagi &amp; anago). Both \u2014 no organ meats or exotic game.' }
+        { time:'Midday', type:'restaurant', badge:'To arrange', badgeType:'pending', title:'Lunch', sub:'', loc:'', addr:'', q:'', notes:'', alert:null },
+        { time:'Evening', type:'restaurant', badge:'To arrange', badgeType:'pending', title:'Dinner', sub:'', loc:'', addr:'', q:'', notes:'', alert:null }
       ] },
-    { date:'2027-04-06', dayNum:10, weekday:'Tuesday, 6 April', city:'Tokyo', cityClass:'', hotel:'Janu Tokyo', hq:'Janu Tokyo', hotelNote:'Tokyo \u00b7 last night', hosted:false,
-      notes:'A relaxed last full day \u2014 a casual lunch, time for whatever Tokyo has left, and a final sushi dinner at Shunji (being confirmed).',
+    { date:'2027-04-06', dayNum:10, weekday:'Tuesday, 6 April', city:'Tokyo', cityClass:'', hotel:'Janu', hq:'Janu Tokyo', hotelNote:'Azabudai Hills · last night', hosted:false, notes:'',
       stops:[
-        { time:'~12:30', type:'restaurant', badge:'Suggestion', badgeType:'suggestion', title:'Casual lunch \u00b7 pizza or burger', sub:'Lunch \u00b7 HCI to choose venue', loc:'Tokyo', addr:'Tokyo', q:'pizza Tokyo', notes:'A laid-back lunch \u2014 one of Tokyo\u2019s excellent pizzerias (Savoy, Pizza Marumo) or a great burger. HCI to choose.', alert:null },
-        { time:'~17:30', type:'restaurant', badge:'Confirming', badgeType:'pending', title:'Shunji', sub:'Dinner \u00b7 Edomae sushi \u00b7 to confirm', loc:'Shunji', addr:'Tokyo', q:'Shunji Tokyo sushi', notes:'A final sushi dinner at Shunji. One open question: the Tokyo shop was reported to be closing around April \u2014 HCI is confirming it is still operating before this is locked. HCI\u2019s pick is held as a backup.', alert:'Confirm shop still operating before locking', dietary:'Justin \u2014 no eel (unagi &amp; anago). Both \u2014 no organ meats or exotic game.' }
+        { time:'Midday', type:'restaurant', badge:'To arrange', badgeType:'pending', title:'Lunch', sub:'', loc:'', addr:'', q:'', notes:'', alert:null },
+        { time:'Evening', type:'restaurant', badge:'To arrange', badgeType:'pending', title:'Dinner', sub:'', loc:'', addr:'', q:'', notes:'', alert:null }
       ] },
-    { date:'2027-04-07', dayNum:11, weekday:'Wednesday, 7 April', city:'Tokyo', cityClass:'', hotel:null, hq:null, hosted:false,
-      notes:'A last, unhurried morning before departure. Thank you for letting Happy Camper share the journey.',
+    { date:'2027-04-07', dayNum:11, weekday:'Wednesday, 7 April', city:'Tokyo', cityClass:'', hotel:null, hq:null, hotelNote:'', hosted:false, notes:'',
       stops:[
-        { time:'Daytime', type:'activity', badge:'Suggestion', badgeType:'suggestion', title:'Open final morning', sub:'A last walk, coffee, or shopping', loc:'Tokyo', addr:'Tokyo', q:'Tokyo', notes:'A final unhurried morning \u2014 a last coffee, a little shopping in Ginza or Daikanyama, or simply the blossom in the Otemachi gardens.', alert:null },
-        { time:'Departure', type:'flight', badge:'Departure', badgeType:'self-booked', title:'Depart Tokyo', sub:'Private transfer to the airport', loc:'Tokyo', addr:'Tokyo', q:'Tokyo', notes:'A private transfer takes you out in good time. Safe travels \u2014 and congratulations to you both.', alert:null }
+        { time:'Departure', type:'flight', badge:'Departure', badgeType:'logistics', title:'Departure Tokyo', sub:'', loc:'Tokyo', addr:'Tokyo', q:'Tokyo', notes:'', alert:null }
       ] }
   ]
 };
@@ -820,12 +802,10 @@ function renderItinerary(){
     +'<h2>Japan</h2>'
     +'<div class="banner-dates">28 March – 7 April 2027 · 2 Guests · 11 Days · Tokyo · Hakone · Kyoto · cherry-blossom season</div>'
     +'<div class="banner-chips">'
-    +'<span class="banner-chip">🍣 Sushi Saito · Rebooking</span>'
-    +'<span class="banner-chip">🍣 Sushi Sugita · Rebooking</span>'
-    +'<span class="banner-chip">🍤 Tempura Motoyoshi · Rebooking</span>'
-    +'<span class="banner-chip">🍱 Ishikawa · Requested</span>'
-    +'<span class="banner-chip">🍷 Cenci · Requested</span>'
-    +'<span class="banner-chip">🏯 Gora Kadan · Self-booked</span>'
+    +'<span class="banner-chip">🏙️ Tokyo · Four Seasons · D1</span>'
+    +'<span class="banner-chip">♨️ Hakone · Gora Kadan · D2–3</span>'
+    +'<span class="banner-chip">🏯 Kyoto · The Shinmonzen · D4–6</span>'
+    +'<span class="banner-chip">🌆 Tokyo · Janu · D7–10</span>'
     +'</div></div>'
     +'<div class="booking-legend">'
     +'<span class="bl-item"><span class="bl-dot confirmed"></span>Confirmed</span>'
